@@ -1,0 +1,129 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  min-height: 60vh;
+  position: relative;
+}
+
+.header_carousel_item {
+  min-height: 60vh;
+  min-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 0 100px 100px;
+}
+
+.header_carousel_item h2 {
+  font-size: 2.25em;
+  line-height: 53px;
+  color: #ffebd1;
+  margin-bottom: 19px;
+  font-family: "Oswald", sans-serif;
+}
+
+.header_carousel_item p:nth-child(3) {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 23px;
+  margin-bottom: 85px;
+  color: #ffebd1;
+  width: 50%;
+}
+
+.header_carousel_item button {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 23px;
+  background: #d46f4d;
+  padding: 8px 40px;
+  color: #fff;
+  border-radius: 5px;
+}
+
+.header_carousel_item_box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 240px;
+  margin-bottom: 39px;
+}
+
+.header_carousel_item_box p {
+  font-weight: 400;
+  line-height: 19px;
+  background: #15676d;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.header_carousel_item_box span {
+  color: #ff7a00;
+}
+
+.header_carousel_item_arrow_left {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: 15px;
+  color: #ff7a00;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.header_carousel_item_arrow_right {
+  position: absolute;
+  top: calc(50% - 32px);
+  right: 15px;
+  color: #ff7a00;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#item_two,
+#item_three {
+  display: none;
+}
+/*# sourceMappingURL=index.css.map */
