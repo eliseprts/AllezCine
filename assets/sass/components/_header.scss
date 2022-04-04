@@ -1,0 +1,72 @@
+.header {
+	min-height: 60vh;
+	position: relative;
+	&_carousel_item {
+		min-height: 60vh;
+		min-width: 100vw;
+		flex-direction: column;
+		align-items: flex-start;
+		padding: 100px 0 100px 100px;
+		h2 {
+			font-size: 2.25em;
+			line-height: 53px;
+			color: $color_1;
+			margin-bottom: 19px;
+			font-family: $font_1;
+		}
+		p:nth-child(3) {
+			font-weight: 400;
+			font-size: 1.25em;
+			line-height: 23px;
+			margin-bottom: 85px;
+			color: $color_1;
+			width: 50%;
+		}
+		button {
+			font-size: 1.25em;
+			font-weight: 400;
+			line-height: 23px;
+			background: $color_3;
+			padding: 8px 40px;
+			color: $color_4;
+			border-radius: 5px;
+		}
+		&_box {
+			justify-content: space-between;
+			width: 240px;
+			margin-bottom: 39px;
+			p {
+				font-weight: 400;
+				line-height: 19px;
+				background: $color_2;
+				padding: 4px 8px;
+				color: $color_4;
+			}
+			span {
+				color: $color_5;
+			}
+		}
+		&_arrow {
+			&_left {
+				position: absolute;
+				top: calc(50% - 32px);
+				left: 15px;
+				color: $color_5;
+				font-size: 2em;
+				cursor: pointer;
+			}
+			&_right {
+				position: absolute;
+				top: calc(50% - 32px);
+				right: 15px;
+				color: $color_5;
+				font-size: 2em;
+				cursor: pointer;
+			}
+		}
+	}
+}
+#item_two,
+#item_three {
+	display: none;
+}
