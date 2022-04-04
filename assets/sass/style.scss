@@ -1,0 +1,138 @@
+//font-family: 'Oswald', sans-serif;
+//font-family: 'Roboto', sans-serif;
+
+*{
+padding: 0;
+margin: 0;
+
+
+}
+/* Trial */
+.trial_container{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-evenly;
+    background: #FFEBD1;
+    padding: 80px 0px;
+    margin: 0px 40px;
+    margin-top: 50px;
+
+    .trial_left{
+        letter-spacing: 1px;
+       h2{
+        font-family: 'Oswald', sans-serif;
+           font-size: 2.25rem;
+       }
+       p{
+           font-size: 2rem;
+           font-weight: 400;
+           
+       }
+
+       
+    }
+
+    /* button trial */
+    .trial_right{
+        button{
+            font-family: 'Roboto', sans-serif;
+        }
+        
+        .start_button{
+          font-size: 1.1rem;
+          color: white;
+          background: #D46F4D;
+          border: none;
+          padding: 13px 50px ;
+          border-radius: 5px;
+          cursor: pointer;
+        }
+        .submit_start{
+            background: #D46F4D;
+            color: #FFEBD1;
+            border: none;
+            border-radius: 5px;
+            padding: 5px 40px;
+            margin-left: 70px;
+
+        }
+
+        .start_button:active{
+            transform: scale(0.98);
+        }
+
+        /*button contact*/
+        .contact_button{
+            font-size: 1.1rem;
+            margin-left: 10px;
+            color: #D46F4D;
+            background: #FFEBD1;
+            border: #D46F4D 1px solid;
+            padding: 11px 60px ;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+          .contact_button:active{
+            transform: scale(0.98);
+        }
+        
+    }
+
+    
+    
+}
+
+
+/* Footer */
+.container_footer{
+    font-family: 'Roboto', sans-serif;
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+    background: #15676D80;
+    padding: 100px 0px;
+    margin-top: 20px;
+
+    .footer_left{
+        h2{
+            font-family: 'Oswald', sans-serif;
+            text-transform: uppercase;
+            padding-top: 10px;
+        }
+        p{
+            padding: 10px 0px;
+            font-weight: 400;
+        }
+
+    }
+
+    .footer_right{
+
+        p{
+            margin-left: 30px;
+            font-weight: 700;
+        }
+
+        ul{
+            list-style-type: none;
+        }
+
+        li{
+            font-weight: 400;
+            padding: 8px 0px;
+        }
+        a:hover{
+            color: #15676D;
+        }
+        
+        a{
+            text-decoration: none;
+            color: black;
+        }
+    }
+}
