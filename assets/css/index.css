@@ -1,6 +1,258 @@
+@import url("https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap");
 * {
-  padding: 0;
   margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  outline: none;
+  border: none;
+}
+
+body,
+html {
+  font-family: "Roboto", sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: #fff;
+}
+
+a:visited {
+  color: #fff;
+}
+
+li {
+  list-style-type: none;
+}
+
+.container2 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.header {
+  overflow: hidden;
+  min-height: 60vh;
+  position: relative;
+}
+
+.header_carousel {
+  position: relative;
+}
+
+.header_carousel_item {
+  position: absolute;
+  height: 60vh;
+  min-width: 100vw;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  padding: 100px 0 100px 100px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
+}
+
+.header_carousel_item h2 {
+  font-size: 2.25em;
+  line-height: 53px;
+  color: #ffebd1;
+  margin-bottom: 19px;
+  font-family: "Oswald", sans-serif;
+}
+
+.header_carousel_item p:nth-child(3) {
+  font-weight: 400;
+  font-size: 1.25em;
+  line-height: 23px;
+  margin-bottom: 85px;
+  color: #ffebd1;
+  width: 50%;
+}
+
+.header_carousel_item a {
+  font-size: 1.25em;
+  font-weight: 400;
+  line-height: 23px;
+  background: #d46f4d;
+  padding: 8px 40px;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 3px #d46f4d solid;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header_carousel_item a:hover {
+  background: none;
+}
+
+.header_carousel_item_box {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 240px;
+  margin-bottom: 39px;
+}
+
+.header_carousel_item_box p {
+  font-weight: 400;
+  line-height: 19px;
+  background: #15676d;
+  padding: 4px 8px;
+  color: #fff;
+}
+
+.header_carousel_item_box span {
+  color: #ff7a00;
+}
+
+.header_carousel_item_arrow_left {
+  position: absolute;
+  top: calc(50% - 32px);
+  left: 15px;
+  color: #ff7a00;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+.header_carousel_item_arrow_right {
+  position: absolute;
+  top: calc(50% - 32px);
+  right: 15px;
+  color: #ff7a00;
+  font-size: 2em;
+  cursor: pointer;
+}
+
+#item_one {
+  left: 0;
+}
+
+#item_two,
+#item_three {
+  left: 100%;
+}
+
+.header2 {
+  font-family: 'Oswald', sans-serif;
+  padding-bottom: 50px;
+  color: #001724;
+  text-transform: uppercase;
+  padding-top: 50px;
+  padding-left: 50px;
+}
+
+#line {
+  color: #001724;
+  padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#card {
+  width: 279px;
+}
+
+#card #bloc_card {
+  background-image: url(/assets/img/limitless_card.jpg);
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+#card .card_genre {
+  background-color: #15676d;
+  color: white;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 4px 8px;
+  margin-left: 28px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#card span {
+  color: #ff7a00;
+  padding-left: 28px;
+}
+
+#card .card_title {
+  font-family: Oswald, sans-serif;
+  color: #ffebd1;
+  font-size: 24px;
+  margin-left: 28px;
+  margin-top: 10px;
+}
+
+#card #bloc_info {
+  display: none;
+  background-color: #c4c4c4;
+  font-size: 16px;
+  color: #ffebd1;
+  font-weight: 400;
+  line-height: 19px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
+}
+
+#card #bloc_info p {
+  padding: 20px 0px;
+}
+
+#card #bloc_info li {
+  list-style-type: circle;
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+#card {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
+}
+
+#card:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px #353535;
+          box-shadow: 0px 0px 10px 3px #353535;
+}
+
+#card:hover #bloc_info {
+  display: block;
 }
 
 /* Trial */
@@ -18,7 +270,7 @@
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
-  background: #FFEBD1;
+  background: #ffebd1;
   padding: 80px 0px;
   margin: 0px 40px;
   margin-top: 50px;
@@ -39,6 +291,9 @@
   font-weight: 400;
 }
 
+.trial_container .trial_right {
+  /*button contact*/
+}
 
 .trial_container .trial_right button {
   font-family: 'Roboto', sans-serif;
@@ -47,7 +302,7 @@
 .trial_container .trial_right .start_button {
   font-size: 1.1rem;
   color: white;
-  background: #D46F4D;
+  background: #d46f4d;
   border: none;
   padding: 13px 50px;
   border-radius: 5px;
@@ -55,8 +310,8 @@
 }
 
 .trial_container .trial_right .submit_start {
-  background: #D46F4D;
-  color: #FFEBD1;
+  background: #d46f4d;
+  color: #ffebd1;
   border: none;
   border-radius: 5px;
   padding: 5px 40px;
@@ -71,9 +326,9 @@
 .trial_container .trial_right .contact_button {
   font-size: 1.1rem;
   margin-left: 10px;
-  color: #D46F4D;
-  background: #FFEBD1;
-  border: #D46F4D 1px solid;
+  color: #d46f4d;
+  background: #ffebd1;
+  border: #d46f4d 1px solid;
   padding: 11px 60px;
   border-radius: 5px;
   cursor: pointer;
@@ -98,7 +353,7 @@
       flex-wrap: nowrap;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  background: #15676D80;
+  background: #15676d80;
   padding: 100px 0px;
   margin-top: 20px;
 }
@@ -130,11 +385,11 @@
 }
 
 .container_footer .footer_right a:hover {
-  color: #15676D;
+  color: #15676d;
 }
 
 .container_footer .footer_right a {
   text-decoration: none;
   color: black;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=index.css.map */
