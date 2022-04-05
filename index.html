@@ -12,34 +12,18 @@
 		<div class="body_content">
 			<header id="slide_1">
 				<div class="header">
-					<div class="header_carousel">
-						<div id="item_one" class="container2 header_carousel_item" style="background: url('./assets/img/limitless.jpg') no-repeat; background-size: cover">
-							<h2>Limitless</h2>
-							<div class="container2 header_carousel_item_box">
-								<p>Thriller/Action</p>
-								<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+					<div class="header_carousel header_target">
+						<template id="tpl_header_item">
+							<div class="container2 header_carousel_item" style="background: url('./assets/img/limitless.jpg') no-repeat; background-size: cover">
+								<h2 class="movie_name"></h2>
+								<div class="container2 header_carousel_item_box">
+									<p class="movie_genre"></p>
+									<span class="movie_stars"><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
+								</div>
+								<p class="movie_desc"></p>
+								<a class="movie_link" href="" target="_blank">play trailer</a>
 							</div>
-							<p>Ecrivain raté, Eddie apprend que sa petite amie le quitte. Elle ne supporte plus de le voir se laisser aller. Un jour, on lui fait découvrir le NZT. Il s'agit d'un produit pharmaceutique qui décuple les facultés du cerveau. En en prenant, il devient un autre homme, supérieurement intelligent. Eddie se lance dans les affaires et se fait vite repérer à Wall Street. Mais il devient aussi complètement dépendant à la drogue.</p>
-							<a href="https://www.youtube.com/watch?v=cor9IdjyOuE" target="_blank">play trailer</a>
-						</div>
-						<div id="item_two" class="container2 header_carousel_item" style="background: url('./assets/img/interstellar.jpg') no-repeat; background-size: cover">
-							<h2>Interstellar</h2>
-							<div class="container2 header_carousel_item_box">
-								<p>SF/Aventure</p>
-								<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
-							</div>
-							<p>Dans un proche futur, la Terre est devenue hostile pour l'homme. Les tempêtes de sable sont fréquentes et il n'y a plus que le maïs qui peut être cultivé, en raison d'un sol trop aride. Cooper est un pilote, recyclé en agriculteur, qui vit avec son fils et sa fille dans la ferme familiale.</p>
-							<a href="https://www.youtube.com/watch?v=VaOijhK3CRU" target="_blank">play trailer</a>
-						</div>
-						<div id="item_three" class="container2 header_carousel_item" style="background: url('./assets/img/swat.jpg') no-repeat; background-size: cover">
-							<h2>S.W.A.T.</h2>
-							<div class="container2 header_carousel_item_box">
-								<p>Action</p>
-								<span><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-regular fa-star"></i></span>
-							</div>
-							<p>Daniel Hondo Harrelson, un lieutenant de la S.W.A.T., dirige une unité qualifiée qui travaille dans les quartiers où il a grandi. Il se retrouve tiraillé entre la loyauté qu'il doit à ses collègues et celle qu'il doit à certaines personnes de la rue.</p>
-							<a href="https://www.youtube.com/watch?v=uyJAUtW_lJE" target="_blank">play trailer</a>
-						</div>
+						</template>
 					</div>
 					<div class="header_carousel_item_arrow">
 						<div class="header_carousel_item_arrow_left">
@@ -463,6 +447,8 @@
 				</ul>
 			</div>
 		</section>
+		<script src="./assets/js/slides.js"></script>
+		<script src="./assets/js/script.js"></script>
 		<script src="https://kit.fontawesome.com/dfa6ef64c8.js" crossorigin="anonymous"></script>
 		<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 	</body>
