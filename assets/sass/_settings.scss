@@ -24,7 +24,6 @@ $font_2: 'Roboto', sans-serif;
 body,
 html {
 	font-family: $font_2;
-	color: #fff;
 }
 a {
 	text-decoration: none;
@@ -39,7 +38,7 @@ li {
 
 // General
 
-.container {
+.container2 {
 	display: flex;
 	justify-content: center;
 	align-items: center;
