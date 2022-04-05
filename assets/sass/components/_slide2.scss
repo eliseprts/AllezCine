@@ -1,11 +1,17 @@
-#slide_2 {
+.header2 {
+    font-family: "Oswald", sans-serif;
+    padding-bottom: 50px;
     color: #001724;
+    text-transform: uppercase;
     padding-top: 50px;
     padding-left: 50px;
-    h2 {
-        font-family: Oswald, sans-serif;
-        padding-bottom: 50px;
-    }
+}
+
+#slide_2 {
+    color: #001724;
+    padding-bottom: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
     display: flex;
     flex-direction: row;
     justify-content: space-around;
@@ -79,74 +85,6 @@
 
 }
 
-#card2 {
-    background-color: #c4c4c4;
-    //padding: 20px;
-    width: 279px;
-
-    
-    #bloc_card2 {
-        background-image: url(/assets/img/s.w.a.t.jpg);
-        height: 330px;
-        display: flex;
-        flex-direction: column;
-        justify-content: flex-end;
-        padding-bottom: 20px;
-        
-
-    }
-
-
-    .card_genre2 {
-        background-color: #15676D;
-        color: white;
-        font-weight: 400 ;
-        line-height: 19px;
-        padding: 4px 8px;
-        margin-left: 28px;
-        font-size: 16px;
-        margin-bottom: 15px;
-        width: fit-content;
-    }
-
-    span {
-        color: #FF7A00;
-        padding-left: 28px;
-        
-    }
-
-    .card_title2 {
-        font-family: Oswald, sans-serif;
-        color: #FFEBD1;
-        font-size: 24px;
-        margin-left: 28px;
-        margin-top: 10px;
-    }
-
-
-    #bloc_info2 {
-        display: none;
-        font-size: 16px;
-        color: #FFEBD1;
-        font-weight: 400 ;
-        line-height: 19px;
-        margin-top: 10px;
-        margin-left: 28px;
-        margin-right: 28px;
-        p {
-            padding: 20px 0px;
-        }
-
-        li {
-            list-style-type: circle;
-            margin-top: 4px;
-            margin-left: 16px;
-        }
-    }
-
-
-}
-
 //animations
 /*#card:hover {
     -webkit-transform: scale(1.2, 1.2);
@@ -171,16 +109,3 @@
         display: block;
     }
 }
-
-#card2 {
-    transition: all 1.2s linear;
-}
-
-#card2:hover {
-    box-shadow: 0px 0px 10px 3px #353535;
-    #bloc_info2 {
-        transform: translateY(-20px);
-        display: block;
-    }
-}
-

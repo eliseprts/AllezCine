@@ -2,8 +2,7 @@
 * {
   margin: 0;
   padding: 0;
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
   outline: none;
   border: none;
 }
@@ -18,7 +17,6 @@ a {
   text-decoration: none;
   color: #fff;
 }
-
 a:visited {
   color: #fff;
 }
@@ -28,35 +26,22 @@ li {
 }
 
 .container {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: center;
+  align-items: center;
 }
 
 .header {
   min-height: 60vh;
   position: relative;
 }
-
 .header_carousel_item {
   min-height: 60vh;
   min-width: 100vw;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-align: start;
-      -ms-flex-align: start;
-          align-items: flex-start;
+  flex-direction: column;
+  align-items: flex-start;
   padding: 100px 0 100px 100px;
 }
-
 .header_carousel_item h2 {
   font-size: 2.25em;
   line-height: 53px;
@@ -64,7 +49,6 @@ li {
   margin-bottom: 19px;
   font-family: "Oswald", sans-serif;
 }
-
 .header_carousel_item p:nth-child(3) {
   font-weight: 400;
   font-size: 1.25em;
@@ -73,7 +57,6 @@ li {
   color: #ffebd1;
   width: 50%;
 }
-
 .header_carousel_item button {
   font-size: 1.25em;
   font-weight: 400;
@@ -83,15 +66,11 @@ li {
   color: #fff;
   border-radius: 5px;
 }
-
 .header_carousel_item_box {
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   width: 240px;
   margin-bottom: 39px;
 }
-
 .header_carousel_item_box p {
   font-weight: 400;
   line-height: 19px;
@@ -99,11 +78,9 @@ li {
   padding: 4px 8px;
   color: #fff;
 }
-
 .header_carousel_item_box span {
   color: #ff7a00;
 }
-
 .header_carousel_item_arrow_left {
   position: absolute;
   top: calc(50% - 32px);
@@ -112,7 +89,6 @@ li {
   font-size: 2em;
   cursor: pointer;
 }
-
 .header_carousel_item_arrow_right {
   position: absolute;
   top: calc(50% - 32px);
@@ -127,47 +103,37 @@ li {
   display: none;
 }
 
-#slide_2 {
+.header2 {
+  font-family: "Oswald", sans-serif;
+  padding-bottom: 50px;
   color: #001724;
+  text-transform: uppercase;
   padding-top: 50px;
   padding-left: 50px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
 }
 
-#slide_2 h2 {
-  font-family: Oswald, sans-serif;
+#slide_2 {
+  color: #001724;
   padding-bottom: 50px;
+  padding-left: 50px;
+  padding-right: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
 
 #card1 {
   background-color: #c4c4c4;
   width: 279px;
 }
-
 #card1 #bloc_card1 {
   background-image: url(/assets/img/limitless_card.jpg);
   height: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
+  flex-direction: column;
+  justify-content: flex-end;
   padding-bottom: 20px;
 }
-
 #card1 .card_genre1 {
   background-color: #15676D;
   color: white;
@@ -181,12 +147,10 @@ li {
   width: -moz-fit-content;
   width: fit-content;
 }
-
 #card1 span {
   color: #FF7A00;
   padding-left: 28px;
 }
-
 #card1 .card_title1 {
   font-family: Oswald, sans-serif;
   color: #FFEBD1;
@@ -194,7 +158,6 @@ li {
   margin-left: 28px;
   margin-top: 10px;
 }
-
 #card1 #bloc_info1 {
   display: none;
   font-size: 16px;
@@ -205,81 +168,10 @@ li {
   margin-left: 28px;
   margin-right: 28px;
 }
-
 #card1 #bloc_info1 p {
   padding: 20px 0px;
 }
-
 #card1 #bloc_info1 li {
-  list-style-type: circle;
-  margin-top: 4px;
-  margin-left: 16px;
-}
-
-#card2 {
-  background-color: #c4c4c4;
-  width: 279px;
-}
-
-#card2 #bloc_card2 {
-  background-image: url(/assets/img/s.w.a.t.jpg);
-  height: 330px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: end;
-      -ms-flex-pack: end;
-          justify-content: flex-end;
-  padding-bottom: 20px;
-}
-
-#card2 .card_genre2 {
-  background-color: #15676D;
-  color: white;
-  font-weight: 400;
-  line-height: 19px;
-  padding: 4px 8px;
-  margin-left: 28px;
-  font-size: 16px;
-  margin-bottom: 15px;
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
-}
-
-#card2 span {
-  color: #FF7A00;
-  padding-left: 28px;
-}
-
-#card2 .card_title2 {
-  font-family: Oswald, sans-serif;
-  color: #FFEBD1;
-  font-size: 24px;
-  margin-left: 28px;
-  margin-top: 10px;
-}
-
-#card2 #bloc_info2 {
-  display: none;
-  font-size: 16px;
-  color: #FFEBD1;
-  font-weight: 400;
-  line-height: 19px;
-  margin-top: 10px;
-  margin-left: 28px;
-  margin-right: 28px;
-}
-
-#card2 #bloc_info2 p {
-  padding: 20px 0px;
-}
-
-#card2 #bloc_info2 li {
   list-style-type: circle;
   margin-top: 4px;
   margin-left: 16px;
@@ -297,34 +189,13 @@ li {
     }
 }*/
 #card1 {
-  -webkit-transition: all 1.2s linear;
   transition: all 1.2s linear;
 }
 
 #card1:hover {
-  -webkit-box-shadow: 0px 0px 10px 3px #353535;
-          box-shadow: 0px 0px 10px 3px #353535;
+  box-shadow: 0px 0px 10px 3px #353535;
 }
-
 #card1:hover #bloc_info1 {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
+  transform: translateY(-20px);
   display: block;
-}
-
-#card2 {
-  -webkit-transition: all 1.2s linear;
-  transition: all 1.2s linear;
-}
-
-#card2:hover {
-  -webkit-box-shadow: 0px 0px 10px 3px #353535;
-          box-shadow: 0px 0px 10px 3px #353535;
-}
-
-#card2:hover #bloc_info2 {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
-  display: block;
-}
-/*# sourceMappingURL=index.css.map */
+}/*# sourceMappingURL=index.css.map */
