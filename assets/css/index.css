@@ -131,6 +131,15 @@ li {
   color: #001724;
   padding-top: 50px;
   padding-left: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #slide_2 h2 {
@@ -138,12 +147,81 @@ li {
   padding-bottom: 50px;
 }
 
-#card {
+#card1 {
   background-color: #c4c4c4;
   width: 279px;
 }
 
-#card #bloc_card {
+#card1 #bloc_card1 {
+  background-image: url(/assets/img/limitless_card.jpg);
+  height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  padding-bottom: 20px;
+}
+
+#card1 .card_genre1 {
+  background-color: #15676D;
+  color: white;
+  font-weight: 400;
+  line-height: 19px;
+  padding: 4px 8px;
+  margin-left: 28px;
+  font-size: 16px;
+  margin-bottom: 15px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+}
+
+#card1 span {
+  color: #FF7A00;
+  padding-left: 28px;
+}
+
+#card1 .card_title1 {
+  font-family: Oswald, sans-serif;
+  color: #FFEBD1;
+  font-size: 24px;
+  margin-left: 28px;
+  margin-top: 10px;
+}
+
+#card1 #bloc_info1 {
+  display: none;
+  font-size: 16px;
+  color: #FFEBD1;
+  font-weight: 400;
+  line-height: 19px;
+  margin-top: 10px;
+  margin-left: 28px;
+  margin-right: 28px;
+}
+
+#card1 #bloc_info1 p {
+  padding: 20px 0px;
+}
+
+#card1 #bloc_info1 li {
+  list-style-type: circle;
+  margin-top: 4px;
+  margin-left: 16px;
+}
+
+#card2 {
+  background-color: #c4c4c4;
+  width: 279px;
+}
+
+#card2 #bloc_card2 {
   background-image: url(/assets/img/s.w.a.t.jpg);
   height: 330px;
   display: -webkit-box;
@@ -159,7 +237,7 @@ li {
   padding-bottom: 20px;
 }
 
-#card .card_genre {
+#card2 .card_genre2 {
   background-color: #15676D;
   color: white;
   font-weight: 400;
@@ -173,12 +251,12 @@ li {
   width: fit-content;
 }
 
-#card span {
+#card2 span {
   color: #FF7A00;
   padding-left: 28px;
 }
 
-#card .card_title {
+#card2 .card_title2 {
   font-family: Oswald, sans-serif;
   color: #FFEBD1;
   font-size: 24px;
@@ -186,7 +264,7 @@ li {
   margin-top: 10px;
 }
 
-#card #bloc_info {
+#card2 #bloc_info2 {
   display: none;
   font-size: 16px;
   color: #FFEBD1;
@@ -197,11 +275,11 @@ li {
   margin-right: 28px;
 }
 
-#card #bloc_info p {
+#card2 #bloc_info2 p {
   padding: 20px 0px;
 }
 
-#card #bloc_info li {
+#card2 #bloc_info2 li {
   list-style-type: circle;
   margin-top: 4px;
   margin-left: 16px;
@@ -218,17 +296,33 @@ li {
 
     }
 }*/
-#card {
+#card1 {
   -webkit-transition: all 1.2s linear;
   transition: all 1.2s linear;
 }
 
-#card:hover {
+#card1:hover {
   -webkit-box-shadow: 0px 0px 10px 3px #353535;
           box-shadow: 0px 0px 10px 3px #353535;
 }
 
-#card:hover #bloc_info {
+#card1:hover #bloc_info1 {
+  -webkit-transform: translateY(-20px);
+          transform: translateY(-20px);
+  display: block;
+}
+
+#card2 {
+  -webkit-transition: all 1.2s linear;
+  transition: all 1.2s linear;
+}
+
+#card2:hover {
+  -webkit-box-shadow: 0px 0px 10px 3px #353535;
+          box-shadow: 0px 0px 10px 3px #353535;
+}
+
+#card2:hover #bloc_info2 {
   -webkit-transform: translateY(-20px);
           transform: translateY(-20px);
   display: block;
