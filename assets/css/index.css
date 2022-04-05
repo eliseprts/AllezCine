@@ -153,7 +153,6 @@ li {
 }
 
 #card1 {
-  background-color: #c4c4c4;
   width: 279px;
 }
 
@@ -202,13 +201,15 @@ li {
 
 #card1 #bloc_info1 {
   display: none;
+  background-color: #c4c4c4;
   font-size: 16px;
   color: #FFEBD1;
   font-weight: 400;
   line-height: 19px;
-  margin-top: 10px;
-  margin-left: 28px;
-  margin-right: 28px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 28px;
+  padding-right: 28px;
 }
 
 #card1 #bloc_info1 p {
@@ -221,20 +222,9 @@ li {
   margin-left: 16px;
 }
 
-/*#card:hover {
-    -webkit-transform: scale(1.2, 1.2);
-    transform: scale(1.2, 1.2);
-    opacity: 0.5;
-    -webkit-transition: 1s;
-    transition: 1s;
-
-    #bloc_info {
-
-    }
-}*/
 #card1 {
-  -webkit-transition: all 1.2s linear;
-  transition: all 1.2s linear;
+  -webkit-transition: all 0.8s;
+  transition: all 0.8s;
 }
 
 #card1:hover {
@@ -243,8 +233,6 @@ li {
 }
 
 #card1:hover #bloc_info1 {
-  -webkit-transform: translateY(-20px);
-          transform: translateY(-20px);
   display: block;
 }
 /*# sourceMappingURL=index.css.map */
