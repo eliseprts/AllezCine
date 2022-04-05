@@ -1,12 +1,18 @@
 .header {
+	overflow: hidden;
 	min-height: 60vh;
 	position: relative;
+	&_carousel {
+		position: relative;
+	}
 	&_carousel_item {
-		min-height: 60vh;
+		position: absolute;
+		height: 60vh;
 		min-width: 100vw;
 		flex-direction: column;
 		align-items: flex-start;
 		padding: 100px 0 100px 100px;
+		transition: all 1s;
 		h2 {
 			font-size: 2.25em;
 			line-height: 53px;
@@ -22,7 +28,7 @@
 			color: $color_1;
 			width: 50%;
 		}
-		button {
+		a {
 			font-size: 1.25em;
 			font-weight: 400;
 			line-height: 23px;
@@ -30,6 +36,12 @@
 			padding: 8px 40px;
 			color: $color_4;
 			border-radius: 5px;
+			cursor: pointer;
+			border: 3px $color_3 solid;
+			transition: all 0.3s;
+			&:hover {
+				background: none;
+			}
 		}
 		&_box {
 			justify-content: space-between;
@@ -66,7 +78,10 @@
 		}
 	}
 }
+#item_one {
+	left: 0;
+}
 #item_two,
 #item_three {
-	display: none;
+	left: 100%;
 }
