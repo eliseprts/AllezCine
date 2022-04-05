@@ -112,7 +112,7 @@ li {
   padding-left: 50px;
 }
 
-#slide_2 {
+#line {
   color: #001724;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -122,10 +122,10 @@ li {
   justify-content: space-around;
 }
 
-#card1 {
+#card {
   width: 279px;
 }
-#card1 #bloc_card1 {
+#card #bloc_card {
   background-image: url(/assets/img/limitless_card.jpg);
   height: 330px;
   display: flex;
@@ -133,7 +133,7 @@ li {
   justify-content: flex-end;
   padding-bottom: 20px;
 }
-#card1 .card_genre1 {
+#card .card_genre {
   background-color: #15676D;
   color: white;
   font-weight: 400;
@@ -146,18 +146,18 @@ li {
   width: -moz-fit-content;
   width: fit-content;
 }
-#card1 span {
+#card span {
   color: #FF7A00;
   padding-left: 28px;
 }
-#card1 .card_title1 {
+#card .card_title {
   font-family: Oswald, sans-serif;
   color: #FFEBD1;
   font-size: 24px;
   margin-left: 28px;
   margin-top: 10px;
 }
-#card1 #bloc_info1 {
+#card #bloc_info {
   display: none;
   background-color: #c4c4c4;
   font-size: 16px;
@@ -169,23 +169,22 @@ li {
   padding-left: 28px;
   padding-right: 28px;
 }
-#card1 #bloc_info1 p {
+#card #bloc_info p {
   padding: 20px 0px;
 }
-#card1 #bloc_info1 li {
+#card #bloc_info li {
   list-style-type: circle;
   margin-top: 4px;
   margin-left: 16px;
 }
 
-#card1 {
-  transition: all 1.2s linear;
+#card {
+  transition: all 0.5s ease-in;
 }
 
-#card1:hover {
+#card:hover {
   box-shadow: 0px 0px 10px 3px #353535;
 }
-#card1:hover #bloc_info1 {
-  transform: translateY(-20px);
+#card:hover #bloc_info {
   display: block;
 }/*# sourceMappingURL=index.css.map */
