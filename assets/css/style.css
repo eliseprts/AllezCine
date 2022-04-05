@@ -39,9 +39,6 @@
   font-weight: 400;
 }
 
-.trial_container .trial_right {
-  /*button contact*/
-}
 
 .trial_container .trial_right button {
   font-family: 'Roboto', sans-serif;
@@ -115,6 +112,7 @@
 .container_footer .footer_left p {
   padding: 10px 0px;
   font-weight: 400;
+  margin-bottom: 0px;
 }
 
 .container_footer .footer_right p {

@@ -73,7 +73,44 @@
           </div>
         </div>
         <!-- Button contact -->
-        <button type="button" class="contact_button">Contact Us</button>
+        <button type="button" class="contact_button" data-bs-toggle="modal" data-bs-target="#modalForm2">
+          Contact Us
+        </button>
+
+        <!-- Modal -->
+        <div class="modal fade" id="modalForm2" tabindex="-1" aria-labelledby="exampleModalLabel2" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel2">
+                  contact Us
+                </h5>
+                <button
+                  type="button" class="btn-close" data-bs-dismiss="modal2" aria-label="Close">
+                </button>
+              </div>
+              <div class="modal-body">
+                <form>
+                  <div class="mb-3">
+                    <label class="form-label">Your name</label>
+                    <input type="text" class="form-control" id="username2" name="username" placeholder="Username"/>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Your email</label>
+                    <input type="email" class="form-control" id="email" name="email" placeholder="Email"/>
+                  </div>
+                  <div class="mb-3">
+                    <label class="form-label">Your request</label>
+                    <input type="password" class="form-control" id="password" name="password" placeholder="Resquest"/>
+                  </div>
+                  <div class="modal-footer d-block">
+                    <button type="submit" class="submit_start">Submit</button>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
         
         
       </div>
