@@ -2,7 +2,8 @@
 * {
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
   outline: none;
   border: none;
 }
@@ -17,6 +18,7 @@ a {
   text-decoration: none;
   color: #fff;
 }
+
 a:visited {
   color: #fff;
 }
@@ -26,9 +28,15 @@ li {
 }
 
 .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  justify-content: center;
-  align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .header {
@@ -36,24 +44,27 @@ li {
   min-height: 60vh;
   position: relative;
 }
-<<<<<<< HEAD
 
 .header_carousel {
   position: relative;
 }
 
-=======
->>>>>>> elise
 .header_carousel_item {
   position: absolute;
   height: 60vh;
   min-width: 100vw;
-  flex-direction: column;
-  align-items: flex-start;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
   padding: 100px 0 100px 100px;
   -webkit-transition: all 1s;
   transition: all 1s;
 }
+
 .header_carousel_item h2 {
   font-size: 2.25em;
   line-height: 53px;
@@ -61,6 +72,7 @@ li {
   margin-bottom: 19px;
   font-family: "Oswald", sans-serif;
 }
+
 .header_carousel_item p:nth-child(3) {
   font-weight: 400;
   font-size: 1.25em;
@@ -69,12 +81,8 @@ li {
   color: #ffebd1;
   width: 50%;
 }
-<<<<<<< HEAD
 
 .header_carousel_item a {
-=======
-.header_carousel_item button {
->>>>>>> elise
   font-size: 1.25em;
   font-weight: 400;
   line-height: 23px;
@@ -91,11 +99,15 @@ li {
 .header_carousel_item a:hover {
   background: none;
 }
+
 .header_carousel_item_box {
-  justify-content: space-between;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
   width: 240px;
   margin-bottom: 39px;
 }
+
 .header_carousel_item_box p {
   font-weight: 400;
   line-height: 19px;
@@ -103,9 +115,11 @@ li {
   padding: 4px 8px;
   color: #fff;
 }
+
 .header_carousel_item_box span {
   color: #ff7a00;
 }
+
 .header_carousel_item_arrow_left {
   position: absolute;
   top: calc(50% - 32px);
@@ -114,6 +128,7 @@ li {
   font-size: 2em;
   cursor: pointer;
 }
+
 .header_carousel_item_arrow_right {
   position: absolute;
   top: calc(50% - 32px);
@@ -146,22 +161,37 @@ li {
   padding-bottom: 50px;
   padding-left: 50px;
   padding-right: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
 }
 
 #card {
   width: 279px;
 }
+
 #card #bloc_card {
   background-image: url(/assets/img/limitless_card.jpg);
   height: 330px;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-end;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
   padding-bottom: 20px;
 }
+
 #card .card_genre {
   background-color: #15676D;
   color: white;
@@ -175,10 +205,12 @@ li {
   width: -moz-fit-content;
   width: fit-content;
 }
+
 #card span {
   color: #FF7A00;
   padding-left: 28px;
 }
+
 #card .card_title {
   font-family: Oswald, sans-serif;
   color: #FFEBD1;
@@ -186,6 +218,7 @@ li {
   margin-left: 28px;
   margin-top: 10px;
 }
+
 #card #bloc_info {
   display: none;
   background-color: #c4c4c4;
@@ -198,9 +231,11 @@ li {
   padding-left: 28px;
   padding-right: 28px;
 }
+
 #card #bloc_info p {
   padding: 20px 0px;
 }
+
 #card #bloc_info li {
   list-style-type: circle;
   margin-top: 4px;
@@ -208,12 +243,16 @@ li {
 }
 
 #card {
+  -webkit-transition: all 0.5s ease-in;
   transition: all 0.5s ease-in;
 }
 
 #card:hover {
-  box-shadow: 0px 0px 10px 3px #353535;
+  -webkit-box-shadow: 0px 0px 10px 3px #353535;
+          box-shadow: 0px 0px 10px 3px #353535;
 }
+
 #card:hover #bloc_info {
   display: block;
-}/*# sourceMappingURL=index.css.map */
+}
+/*# sourceMappingURL=index.css.map */
