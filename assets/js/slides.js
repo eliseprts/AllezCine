@@ -1,10 +1,10 @@
 const nextImage = (id, idTwo) => {
-	document.querySelector(id).style.display = 'none';
-	document.querySelector(idTwo).style.display = 'block';
+	document.querySelector(id).style.left = '100%';
+	document.querySelector(idTwo).style.left = '0';
 };
 const previousImage = (id, idTwo) => {
-	document.querySelector(id).style.display = 'block';
-	document.querySelector(idTwo).style.display = 'none';
+	document.querySelector(id).style.left = '0';
+	document.querySelector(idTwo).style.left = '100%';
 };
 
 document.querySelectorAll('.slide_button').forEach((b) => {

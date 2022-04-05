@@ -11,7 +11,6 @@
 body,
 html {
   font-family: "Roboto", sans-serif;
-  color: #fff;
 }
 
 a {
@@ -27,7 +26,7 @@ li {
   list-style-type: none;
 }
 
-.container {
+.container2 {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,12 +39,18 @@ li {
 }
 
 .header {
+  overflow: hidden;
   min-height: 60vh;
   position: relative;
 }
 
+.header_carousel {
+  position: relative;
+}
+
 .header_carousel_item {
-  min-height: 60vh;
+  position: absolute;
+  height: 60vh;
   min-width: 100vw;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
@@ -55,6 +60,8 @@ li {
       -ms-flex-align: start;
           align-items: flex-start;
   padding: 100px 0 100px 100px;
+  -webkit-transition: all 1s;
+  transition: all 1s;
 }
 
 .header_carousel_item h2 {
@@ -74,7 +81,7 @@ li {
   width: 50%;
 }
 
-.header_carousel_item button {
+.header_carousel_item a {
   font-size: 1.25em;
   font-weight: 400;
   line-height: 23px;
@@ -82,6 +89,14 @@ li {
   padding: 8px 40px;
   color: #fff;
   border-radius: 5px;
+  cursor: pointer;
+  border: 3px #d46f4d solid;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.header_carousel_item a:hover {
+  background: none;
 }
 
 .header_carousel_item_box {
@@ -122,13 +137,17 @@ li {
   cursor: pointer;
 }
 
+#item_one {
+  left: 0;
+}
+
 #item_two,
 #item_three {
-  display: none;
+  left: 100%;
 }
 
 .header2 {
-  font-family: "Oswald", sans-serif;
+  font-family: 'Oswald', sans-serif;
   padding-bottom: 50px;
   color: #001724;
   text-transform: uppercase;
@@ -136,7 +155,7 @@ li {
   padding-left: 50px;
 }
 
-#slide_2 {
+#line {
   color: #001724;
   padding-bottom: 50px;
   padding-left: 50px;
@@ -152,11 +171,11 @@ li {
       justify-content: space-around;
 }
 
-#card1 {
+#card {
   width: 279px;
 }
 
-#card1 #bloc_card1 {
+#card #bloc_card {
   background-image: url(/assets/img/limitless_card.jpg);
   height: 330px;
   display: -webkit-box;
@@ -172,8 +191,8 @@ li {
   padding-bottom: 20px;
 }
 
-#card1 .card_genre1 {
-  background-color: #15676D;
+#card .card_genre {
+  background-color: #15676d;
   color: white;
   font-weight: 400;
   line-height: 19px;
@@ -186,24 +205,24 @@ li {
   width: fit-content;
 }
 
-#card1 span {
-  color: #FF7A00;
+#card span {
+  color: #ff7a00;
   padding-left: 28px;
 }
 
-#card1 .card_title1 {
+#card .card_title {
   font-family: Oswald, sans-serif;
-  color: #FFEBD1;
+  color: #ffebd1;
   font-size: 24px;
   margin-left: 28px;
   margin-top: 10px;
 }
 
-#card1 #bloc_info1 {
+#card #bloc_info {
   display: none;
   background-color: #c4c4c4;
   font-size: 16px;
-  color: #FFEBD1;
+  color: #ffebd1;
   font-weight: 400;
   line-height: 19px;
   padding-top: 10px;
@@ -212,27 +231,165 @@ li {
   padding-right: 28px;
 }
 
-#card1 #bloc_info1 p {
+#card #bloc_info p {
   padding: 20px 0px;
 }
 
-#card1 #bloc_info1 li {
+#card #bloc_info li {
   list-style-type: circle;
   margin-top: 4px;
   margin-left: 16px;
 }
 
-#card1 {
-  -webkit-transition: all 0.8s;
-  transition: all 0.8s;
+#card {
+  -webkit-transition: all 0.5s ease-in;
+  transition: all 0.5s ease-in;
 }
 
-#card1:hover {
+#card:hover {
   -webkit-box-shadow: 0px 0px 10px 3px #353535;
           box-shadow: 0px 0px 10px 3px #353535;
 }
 
-#card1:hover #bloc_info1 {
+#card:hover #bloc_info {
   display: block;
+}
+
+/* Trial */
+.trial_container {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  background: #ffebd1;
+  padding: 80px 0px;
+  margin: 0px 40px;
+  margin-top: 50px;
+  /* button trial */
+}
+
+.trial_container .trial_left {
+  letter-spacing: 1px;
+}
+
+.trial_container .trial_left h2 {
+  font-family: 'Oswald', sans-serif;
+  font-size: 2.25rem;
+}
+
+.trial_container .trial_left p {
+  font-size: 2rem;
+  font-weight: 400;
+}
+
+.trial_container .trial_right {
+  /*button contact*/
+}
+
+.trial_container .trial_right button {
+  font-family: 'Roboto', sans-serif;
+}
+
+.trial_container .trial_right .start_button {
+  font-size: 1.1rem;
+  color: white;
+  background: #d46f4d;
+  border: none;
+  padding: 13px 50px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trial_container .trial_right .submit_start {
+  background: #d46f4d;
+  color: #ffebd1;
+  border: none;
+  border-radius: 5px;
+  padding: 5px 40px;
+  margin-left: 70px;
+}
+
+.trial_container .trial_right .start_button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+.trial_container .trial_right .contact_button {
+  font-size: 1.1rem;
+  margin-left: 10px;
+  color: #d46f4d;
+  background: #ffebd1;
+  border: #d46f4d 1px solid;
+  padding: 11px 60px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.trial_container .trial_right .contact_button:active {
+  -webkit-transform: scale(0.98);
+          transform: scale(0.98);
+}
+
+/* Footer */
+.container_footer {
+  font-family: 'Roboto', sans-serif;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  background: #15676d80;
+  padding: 100px 0px;
+  margin-top: 20px;
+}
+
+.container_footer .footer_left h2 {
+  font-family: 'Oswald', sans-serif;
+  text-transform: uppercase;
+  padding-top: 10px;
+}
+
+.container_footer .footer_left p {
+  padding: 10px 0px;
+  font-weight: 400;
+  margin-bottom: 0px;
+}
+
+.container_footer .footer_right p {
+  margin-left: 30px;
+  font-weight: 700;
+}
+
+.container_footer .footer_right ul {
+  list-style-type: none;
+}
+
+.container_footer .footer_right li {
+  font-weight: 400;
+  padding: 8px 0px;
+}
+
+.container_footer .footer_right a:hover {
+  color: #15676d;
+}
+
+.container_footer .footer_right a {
+  text-decoration: none;
+  color: black;
 }
 /*# sourceMappingURL=index.css.map */
