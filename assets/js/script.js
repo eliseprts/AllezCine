@@ -70,7 +70,7 @@ for (let j = 0; j < 15; j++) {
 			let card1 = clone.querySelector('.card1');
 			let img = 'https://image.tmdb.org/t/p/w500' + data.results[j].poster_path;
 			let stars = (data.results[j].vote_average / 2).toFixed();
-			let cardsContainer = document.getElementById('cards_container')
+			let cardsContainer = document.getElementById('cards_container');
 
 			for (let k = 0; k < 5; k++) {
 				let regularStars = 5 - stars;
@@ -86,10 +86,10 @@ for (let j = 0; j < 15; j++) {
 				}
 
 				movieStars.innerHTML = str;
-
 			}
 
 			card1.style.background = `url(${img})`;
+			card1.style.backgroundSize = 'cover';
 			movieGenre.innerHTML = data.results[j].vote_count + ' avis';
 			movieTitle.innerHTML = data.results[j].title;
 			movieDesc.innerHTML = data.results[j].overview;
