@@ -29,4 +29,10 @@ _Repo created as part of the [BeCode web development training](https://becode.or
 
 ## Challenge
 
-Create a website that will have to retrieve from an API all the recent movies, when clicking on a movie, you will display in a modal, its additional information, such as its synopsis, a trailer if it exists and the casts.
+Create a website that will have to retrieve from an [API all the recent movies](https://developers.themoviedb.org/3/getting-started/introduction), when clicking on a movie, you will display in a modal, its additional information, such as its synopsis, a trailer if it exists and the casts.
+
+## Style
+
+[Figma model](<https://www.figma.com/file/eOQKHQM4WopvP3o0asSZXP/AllezCine-(Community)?node-id=2%3A8>)
+
+### Style Guide
