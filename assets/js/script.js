@@ -44,8 +44,8 @@ for (let i = 0; i < 3; i++) {
 				default:
 					break;
 			}
-			carouselItem.style.background = `url(${img}) no-repeat`;
-			carouselItem.style.backgroundSize = 'cover';
+			carouselItem.style.background = `url(${img})`;
+			// carouselItem.style.backgroundSize = 'cover';
 			movieName.innerHTML = data.results[i].title;
 			movieGenre.innerHTML = data.results[i].vote_count;
 			movieDesc.innerHTML = data.results[i].overview;
