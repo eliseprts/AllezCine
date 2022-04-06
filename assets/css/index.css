@@ -61,7 +61,7 @@ li {
 
 .header_carousel_item {
   position: absolute;
-  min-height: 60vh;
+  height: 60vh;
   min-width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;

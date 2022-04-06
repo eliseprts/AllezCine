@@ -1,9 +1,7 @@
 // Header
 
-let headerMovie = [51876, 157336, 359471];
-
 for (let i = 0; i < 3; i++) {
-	fetch(`https://api.themoviedb.org/3/movie/${headerMovie[i]}?api_key=5d061f8554e919f202d36a68b0803ed5`)
+	fetch(`https://api.themoviedb.org/3/discover/movie?api_key=5d061f8554e919f202d36a68b0803ed5&language=fr-FR`)
 		.then((res) => res.json())
 		.then((data) => {
 			let headerTemplate = document.getElementById('tpl_header_item');
@@ -14,8 +12,8 @@ for (let i = 0; i < 3; i++) {
 			let movieDesc = clone.querySelector('.movie_desc');
 			let movieLink = clone.querySelector('.movie_link');
 			let carouselItem = clone.querySelector('.header_carousel_item');
-			let img = 'https://image.tmdb.org/t/p/w500' + data.poster_path;
-			let stars = (data.vote_average / 2).toFixed();
+			let img = 'https://image.tmdb.org/t/p/w500' + data.results[i].poster_path;
+			let stars = (data.results[i].vote_average / 2).toFixed();
 
 			for (let i = 0; i < 5; i++) {
 				let regularStars = 5 - stars;
@@ -48,10 +46,10 @@ for (let i = 0; i < 3; i++) {
 			}
 			carouselItem.style.background = `url(${img}) no-repeat`;
 			carouselItem.style.backgroundSize = 'cover';
-			movieName.innerHTML = data.title;
-			movieGenre.innerHTML = data.genres[data.genres.length - 1].name;
-			movieDesc.innerHTML = data.overview;
-			movieLink.setAttribute('href', data.homepage);
+			movieName.innerHTML = data.results[i].title;
+			movieGenre.innerHTML = data.results[i].vote_count;
+			movieDesc.innerHTML = data.results[i].overview;
+			movieLink.setAttribute('href', data.results[i].homepage);
 
 			document.querySelector('.header_target').appendChild(clone);
 		});
