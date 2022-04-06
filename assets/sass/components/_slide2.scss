@@ -4,9 +4,9 @@
 }
 
 .header2 {
-	font-family: 'Oswald', sans-serif;
+	font-family: $font_1;
 	padding-bottom: 50px;
-	color: #001724;
+	color: $color_6;
 	text-transform: uppercase;
 	padding-top: 50px;
 }
@@ -28,28 +28,25 @@
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
-		padding-bottom: 20px;
+		padding: 20px;
 		.card_movie_genre {
-			background-color: #15676d;
-			color: white;
+			background-color: $color_2;
+			color: $color_4;
 			font-weight: 400;
 			line-height: 19px;
 			padding: 4px 8px;
-			margin-left: 28px;
 			font-size: 16px;
 			margin-bottom: 15px;
 			width: fit-content;
 		}
 		.card_movie_stars {
-			color: #ff7a00;
-			padding-left: 28px;
+			color: $color_5;
 		}
 	
 		.card_movie_title {
-			font-family: 'Oswald', sans-serif;
-			color: #ffebd1;
+			font-family: $font_1;
+			color: $color_1;
 			font-size: 24px;
-			margin-left: 28px;
 			margin-top: 10px;
 		}
 	}
@@ -57,8 +54,8 @@
 	.overlay_card {
 		display: none;
 		height: 330px;
-		background-color: #15676d;
-		color: #ffebd1;
+		background-color: $color_2;
+		color: $color_4;
 		font-size: 16px;
 		font-weight: 300;
 		line-height: 19px;
@@ -71,11 +68,12 @@
 // ANIMATIONS
 
 .card {
-	transition: all 1s ease-in;
+	transition: all 0.5s ease-in;
 }
 
 .card:hover {
 	box-shadow: 0px 0px 5px 5px #c4c4c4;
+	transform: scale(1.1, 1.1);
 	.overlay_card {
 		display: block;
 		opacity: 0.9;

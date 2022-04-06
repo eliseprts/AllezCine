@@ -9,7 +9,7 @@
 	z-index: 1;
 	top: 0;
 	left: 0;
-	background-color: #15676d;
+	background-color: $color_2;
 	overflow-x: hidden;
 	padding-top: 16px;
 }
@@ -17,23 +17,23 @@
 .sidebar a {
 	padding: 6px 8px 6px 16px;
 	text-decoration: none;
-	color: #ffffff;
+	color: $color_4;
 	display: block;
 	margin: 50px 0px;
 }
 
 .sidebar a:hover {
-	color: #000000;
+	color: $color_6;
 }
 
 /* Trial */
 .trial_container {
-	font-family: 'Roboto', sans-serif;
+	font-family: $font_2;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
 	justify-content: space-evenly;
-	background: #ffebd1;
+	background: $color_1;
 	padding: 80px 0px;
 	margin: 0px 40px;
 	margin-top: 50px;
@@ -42,7 +42,7 @@
 		letter-spacing: 1px;
 
 		h2 {
-			font-family: 'Oswald', sans-serif;
+			font-family: $font_1;
 			font-size: 2.25rem;
 		}
 
@@ -55,13 +55,15 @@
 	/* button trial */
 	.trial_right {
 		button {
-			font-family: 'Roboto', sans-serif;
+			font-family: $font_2;
 		}
 
 		.start_button {
 			font-size: 1.1rem;
-			color: white;
-			background: #d46f4d;
+			color: $color_4;
+			text-transform: uppercase;
+			font-weight: 300;
+			background: $color_3;
 			border: none;
 			padding: 13px 50px;
 			border-radius: 5px;
@@ -72,8 +74,8 @@
 		}
 
 		.submit_start {
-			background: #d46f4d;
-			color: #ffebd1;
+			background: $color_3;
+			color: $color_1;
 			border: none;
 			border-radius: 5px;
 			padding: 5px 40px;
@@ -88,9 +90,11 @@
 		.contact_button {
 			font-size: 1.1rem;
 			margin-left: 10px;
-			color: #d46f4d;
-			background: #ffebd1;
-			border: #d46f4d 1px solid;
+			color: $color_3;
+			font-weight: 300;
+			text-transform: uppercase;
+			background: $color_1;
+			border: $color_3 1px solid;
 			padding: 11px 60px;
 			border-radius: 5px;
 			cursor: pointer;
@@ -104,7 +108,7 @@
 
 /* Footer */
 .container_footer {
-	font-family: 'Roboto', sans-serif;
+	font-family: $font_2;
 	display: flex;
 	flex-direction: row;
 	flex-wrap: nowrap;
@@ -115,14 +119,14 @@
 
 	.footer_left {
 		h2 {
-			font-family: 'Oswald', sans-serif;
+			font-family: $font_1;
 			text-transform: uppercase;
 			padding-top: 10px;
 		}
 
 		p {
 			padding: 10px 0px;
-			font-weight: 400;
+			font-weight: 300;
 			margin-bottom: 0px;
 		}
 	}
@@ -138,17 +142,17 @@
 		}
 
 		li {
-			font-weight: 400;
+			font-weight: 300;
 			padding: 8px 0px;
 		}
 
 		a:hover {
-			color: #15676d;
+			color: $color_2;
 		}
 
 		a {
 			text-decoration: none;
-			color: black;
+			color: $color_6;
 		}
 	}
 }

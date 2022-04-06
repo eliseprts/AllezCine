@@ -61,7 +61,7 @@ li {
   font-family: "Oswald", sans-serif;
 }
 .header_carousel_item p:nth-child(3) {
-  font-weight: 400;
+  font-weight: 300;
   font-size: 1.25em;
   line-height: 23px;
   margin-bottom: 85px;
@@ -70,8 +70,9 @@ li {
 }
 .header_carousel_item a {
   font-size: 1.25em;
-  font-weight: 400;
+  font-weight: 300;
   line-height: 23px;
+  text-transform: uppercase;
   background: #d46f4d;
   padding: 8px 40px;
   color: #fff;
@@ -82,6 +83,7 @@ li {
 }
 .header_carousel_item a:hover {
   background: none;
+  color: #d46f4d;
 }
 .header_carousel_item_box {
   justify-content: space-between;
@@ -90,7 +92,7 @@ li {
   margin-bottom: 39px;
 }
 .header_carousel_item_box p {
-  font-weight: 400;
+  font-weight: 300;
   line-height: 19px;
   background: #15676d;
   padding: 4px 8px;
@@ -200,15 +202,14 @@ li {
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
-  padding-bottom: 20px;
+  padding: 20px;
 }
 .card .card1 .card_movie_genre {
   background-color: #15676d;
-  color: white;
+  color: #fff;
   font-weight: 400;
   line-height: 19px;
   padding: 4px 8px;
-  margin-left: 28px;
   font-size: 16px;
   margin-bottom: 15px;
   width: -webkit-fit-content;
@@ -217,20 +218,18 @@ li {
 }
 .card .card1 .card_movie_stars {
   color: #ff7a00;
-  padding-left: 28px;
 }
 .card .card1 .card_movie_title {
   font-family: "Oswald", sans-serif;
   color: #ffebd1;
   font-size: 24px;
-  margin-left: 28px;
   margin-top: 10px;
 }
 .card .overlay_card {
   display: none;
   height: 330px;
   background-color: #15676d;
-  color: #ffebd1;
+  color: #fff;
   font-size: 16px;
   font-weight: 300;
   line-height: 19px;
@@ -240,11 +239,12 @@ li {
 }
 
 .card {
-  transition: all 1s ease-in;
+  transition: all 0.5s ease-in;
 }
 
 .card:hover {
   box-shadow: 0px 0px 5px 5px #c4c4c4;
+  transform: scale(1.1, 1.1);
 }
 .card:hover .overlay_card {
   display: block;
@@ -286,13 +286,13 @@ li {
 .sidebar a {
   padding: 6px 8px 6px 16px;
   text-decoration: none;
-  color: #ffffff;
+  color: #fff;
   display: block;
   margin: 50px 0px;
 }
 
 .sidebar a:hover {
-  color: #000000;
+  color: #001724;
 }
 
 /* Trial */
@@ -327,7 +327,9 @@ li {
 }
 .trial_container .trial_right .start_button {
   font-size: 1.1rem;
-  color: white;
+  color: #fff;
+  text-transform: uppercase;
+  font-weight: 300;
   background: #d46f4d;
   border: none;
   padding: 13px 50px;
@@ -352,6 +354,8 @@ li {
   font-size: 1.1rem;
   margin-left: 10px;
   color: #d46f4d;
+  font-weight: 300;
+  text-transform: uppercase;
   background: #ffebd1;
   border: #d46f4d 1px solid;
   padding: 11px 60px;
@@ -380,7 +384,7 @@ li {
 }
 .container_footer .footer_left p {
   padding: 10px 0px;
-  font-weight: 400;
+  font-weight: 300;
   margin-bottom: 0px;
 }
 .container_footer .footer_right p {
@@ -391,7 +395,7 @@ li {
   list-style-type: none;
 }
 .container_footer .footer_right li {
-  font-weight: 400;
+  font-weight: 300;
   padding: 8px 0px;
 }
 .container_footer .footer_right a:hover {
@@ -399,7 +403,7 @@ li {
 }
 .container_footer .footer_right a {
   text-decoration: none;
-  color: black;
+  color: #001724;
 }
 
 @media only screen and (max-width: 945px) {

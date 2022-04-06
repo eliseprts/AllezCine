@@ -20,7 +20,7 @@
 			font-family: $font_1;
 		}
 		p:nth-child(3) {
-			font-weight: 400;
+			font-weight:300;
 			font-size: 1.25em;
 			line-height: 23px;
 			margin-bottom: 85px;
@@ -29,8 +29,9 @@
 		}
 		a {
 			font-size: 1.25em;
-			font-weight: 400;
+			font-weight: 300;
 			line-height: 23px;
+			text-transform: uppercase;
 			background: $color_3;
 			padding: 8px 40px;
 			color: $color_4;
@@ -40,6 +41,7 @@
 			transition: all 0.3s;
 			&:hover {
 				background: none;
+				color: $color_3;
 			}
 		}
 		&_box {
@@ -48,7 +50,7 @@
 			width: 21 0px;
 			margin-bottom: 39px;
 			p {
-				font-weight: 400;
+				font-weight: 300;
 				line-height: 19px;
 				background: $color_2;
 				padding: 4px 8px;
