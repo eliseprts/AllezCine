@@ -153,12 +153,13 @@
 	}
 }
 
-@media only screen and (max-width: 916px){
+@media only screen and (max-width: 945px){
 	.trial_container{
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		width: 90vw;
+		width: 87vw;
+		margin-left: 0vw;
 		
 		.trial_left{
 			p{
