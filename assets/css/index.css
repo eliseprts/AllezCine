@@ -234,14 +234,17 @@ li {
           justify-content: center;
 }
 
-#card {
+.card {
   width: 279px;
   height: 330px;
   cursor: pointer;
-  z-index: 1;
 }
+<<<<<<< HEAD
 
 #card #bloc_card {
+=======
+.card .card1 {
+>>>>>>> origin/elise
   background-image: url(/assets/img/limitless_card.jpg);
   height: 330px;
   display: -webkit-box;
@@ -256,8 +259,12 @@ li {
           justify-content: flex-end;
   padding-bottom: 20px;
 }
+<<<<<<< HEAD
 
 #card .card_genre {
+=======
+.card .card1 .card_movie_genre {
+>>>>>>> origin/elise
   background-color: #15676d;
   color: white;
   font-weight: 400;
@@ -270,6 +277,7 @@ li {
   width: -moz-fit-content;
   width: fit-content;
 }
+<<<<<<< HEAD
 
 #card span {
   color: #ff7a00;
@@ -278,21 +286,28 @@ li {
 
 #card .card_title {
   font-family: 'Oswald', sans-serif;
+=======
+.card .card1 .card_movie_stars {
+  color: #ff7a00;
+  padding-left: 28px;
+}
+.card .card1 .card_movie_title {
+  font-family: "Oswald", sans-serif;
+>>>>>>> origin/elise
   color: #ffebd1;
   font-size: 24px;
   margin-left: 28px;
   margin-top: 10px;
 }
+<<<<<<< HEAD
 
 #card #bloc_info {
+=======
+.card .overlay_card {
+>>>>>>> origin/elise
   display: none;
-  background-color: #15676d;
-  font-size: 16px;
-  color: #ffebd1;
-  font-weight: 400;
-  line-height: 19px;
-  padding: 10px 28px;
   height: 330px;
+<<<<<<< HEAD
   -webkit-transform: translateY(-330px);
           transform: translateY(-330px);
 }
@@ -321,6 +336,25 @@ li {
 }
 
 #card:hover #bloc_info {
+=======
+  background-color: #15676d;
+  color: #ffebd1;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 19px;
+  padding: 20px;
+  position: absolute;
+}
+
+.card {
+  transition: all 1s ease-in;
+}
+
+.card:hover {
+  box-shadow: 0px 0px 5px 5px #c4c4c4;
+}
+.card:hover .overlay_card {
+>>>>>>> origin/elise
   display: block;
   opacity: 0.9;
 }
@@ -347,7 +381,12 @@ li {
   .gallery h2 {
     width: 200px;
   }
+<<<<<<< HEAD
   #card {
+=======
+
+  .card {
+>>>>>>> origin/elise
     width: 200px;
   }
 }
