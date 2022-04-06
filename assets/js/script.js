@@ -15,6 +15,24 @@ for (let i = 0; i < 3; i++) {
 			let movieLink = clone.querySelector('.movie_link');
 			let carouselItem = clone.querySelector('.header_carousel_item');
 			let img = 'https://image.tmdb.org/t/p/w500' + data.poster_path;
+			let stars = (data.vote_average / 2).toFixed();
+			console.log(stars);
+
+			for (let i = 0; i < 5; i++) {
+				let regularStars = 5 - stars;
+				let solid = '<i class="fa-solid fa-star"></i>';
+				let regular = '<i class="fa-regular fa-star"></i>';
+				let str = '';
+
+				for (let j = 0; j < stars; j++) {
+					str += solid;
+				}
+				for (let b = 0; b < regularStars; b++) {
+					str += regular;
+				}
+				console.log(str);
+				movieStars.innerHTML = str;
+			}
 
 			switch (i) {
 				case 0:
