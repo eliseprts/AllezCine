@@ -89,6 +89,7 @@ for (let j = 0; j < 15; j++) {
 			}
 
 			card1.style.background = `url(${img})`;
+			card1.style.backgroundSize = 'cover';
 			movieGenre.innerHTML = data.results[j].vote_count + ' avis';
 			movieTitle.innerHTML = data.results[j].title;
 			movieDesc.innerHTML = data.results[j].overview;
