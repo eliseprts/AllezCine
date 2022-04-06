@@ -88,5 +88,16 @@
 	#bloc_info {
 		// transform: translateY(0px);
 		display: block;
+
+        /*@keyframes #bloc_info {
+            from {
+                display: block;
+            }
+            
+            to {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }*/
 	}
 }

@@ -253,6 +253,16 @@ li {
 
 #card:hover #bloc_info {
   display: block;
+  /*@keyframes #bloc_info {
+            from {
+                display: block;
+            }
+            
+            to {
+                display: flex;
+                justify-content: flex-end;
+            }
+        }*/
 }
 
 /* Trial */
