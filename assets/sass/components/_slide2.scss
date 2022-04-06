@@ -18,77 +18,65 @@
 	justify-content: center;
 }
 
-#card {
+.card {
 	width: 279px;
 	height: 330px;
 	cursor: pointer;
-	z-index: 1;
-	#bloc_card {
+	.card1 {
 		background-image: url(/assets/img/limitless_card.jpg);
 		height: 330px;
 		display: flex;
 		flex-direction: column;
 		justify-content: flex-end;
 		padding-bottom: 20px;
+		.card_movie_genre {
+			background-color: #15676d;
+			color: white;
+			font-weight: 400;
+			line-height: 19px;
+			padding: 4px 8px;
+			margin-left: 28px;
+			font-size: 16px;
+			margin-bottom: 15px;
+			width: fit-content;
+		}
+		.card_movie_stars {
+			color: #ff7a00;
+			padding-left: 28px;
+		}
+	
+		.card_movie_title {
+			font-family: 'Oswald', sans-serif;
+			color: #ffebd1;
+			font-size: 24px;
+			margin-left: 28px;
+			margin-top: 10px;
+		}
 	}
 
-	.card_genre {
-		background-color: #15676d;
-		color: white;
-		font-weight: 400;
-		line-height: 19px;
-		padding: 4px 8px;
-		margin-left: 28px;
-		font-size: 16px;
-		margin-bottom: 15px;
-		width: fit-content;
-	}
-
-	span {
-		color: #ff7a00;
-		padding-left: 28px;
-	}
-
-	.card_title {
-		font-family: 'Oswald', sans-serif;
-		color: #ffebd1;
-		font-size: 24px;
-		margin-left: 28px;
-		margin-top: 10px;
-	}
-
-	#bloc_info {
+	.overlay_card {
 		display: none;
-		background-color: #15676d;
-		font-size: 16px;
-		color: #ffebd1;
-		font-weight: 400;
-		line-height: 19px;
-		padding: 10px 28px;
 		height: 330px;
-		transform: translateY(-330px);
-		p {
-			padding: 20px 0px;
-		}
-		h6 {
-			font-weight: 600;
-		}
-		li {
-			list-style-type: disc;
-			margin-top: 4px;
-		}
+		background-color: #15676d;
+		color: #ffebd1;
+		font-size: 16px;
+		font-weight: 300;
+		line-height: 19px;
+		padding: 20px;
+		position: absolute;
+		overflow: scroll;
 	}
 }
 
 // ANIMATIONS
 
-#card {
+.card {
 	transition: all 1s ease-in;
 }
 
-#card:hover {
+.card:hover {
 	box-shadow: 0px 0px 5px 5px #c4c4c4;
-	#bloc_info {
+	.overlay_card {
 		display: block;
 		opacity: 0.9;
 	}
@@ -111,7 +99,7 @@
 		.gallery h2 {
 			width: 200px;
 		}
-		#card {
+		.card {
 			width: 200px;
 		}
 }
