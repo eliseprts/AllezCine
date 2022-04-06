@@ -5,6 +5,7 @@ _Repo created as part of the [BeCode web development training](https://becode.or
 - Mode : group of four people
 - Type of challenge : consolidation
 - Duration : 5 days
+- [GitHub Page](https://eliseprts.github.io/AllezCine/)
 
 ## Group Members
 
