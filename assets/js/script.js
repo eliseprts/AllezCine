@@ -47,7 +47,7 @@ for (let i = 0; i < 3; i++) {
 			carouselItem.style.background = `url(${img})`;
 			// carouselItem.style.backgroundSize = 'cover';
 			movieName.innerHTML = data.results[i].title;
-			movieGenre.innerHTML = data.results[i].vote_count;
+			movieGenre.innerHTML = data.results[i].vote_count + ' avis';
 			movieDesc.innerHTML = data.results[i].overview;
 			movieLink.setAttribute('href', data.results[i].homepage);
 
