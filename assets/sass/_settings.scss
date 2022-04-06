@@ -24,6 +24,7 @@ $font_2: 'Roboto', sans-serif;
 body,
 html {
 	font-family: $font_2;
+	overflow-x: hidden;
 }
 a {
 	text-decoration: none;
@@ -42,4 +43,9 @@ li {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.body_content {
+	width: 98vw;
+	margin-left: 2vw;
 }
