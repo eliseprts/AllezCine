@@ -236,6 +236,7 @@ li {
   line-height: 19px;
   padding: 20px;
   position: absolute;
+  overflow: scroll;
 }
 
 .card {
