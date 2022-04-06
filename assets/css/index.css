@@ -11,6 +11,7 @@
 body,
 html {
   font-family: "Roboto", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
@@ -38,8 +39,12 @@ li {
           align-items: center;
 }
 
+.body_content {
+  width: 98vw;
+  margin-left: 2vw;
+}
+
 .header {
-  overflow: hidden;
   min-height: 60vh;
   position: relative;
 }
@@ -173,6 +178,9 @@ li {
 
 #card {
   width: 279px;
+  height: 330px;
+  cursor: pointer;
+  z-index: 1;
 }
 
 #card #bloc_card {
@@ -211,7 +219,7 @@ li {
 }
 
 #card .card_title {
-  font-family: Oswald, sans-serif;
+  font-family: 'Oswald', sans-serif;
   color: #ffebd1;
   font-size: 24px;
   margin-left: 28px;
@@ -220,49 +228,68 @@ li {
 
 #card #bloc_info {
   display: none;
-  background-color: #c4c4c4;
+  background-color: #15676d;
   font-size: 16px;
   color: #ffebd1;
   font-weight: 400;
   line-height: 19px;
-  padding-top: 10px;
-  padding-bottom: 10px;
-  padding-left: 28px;
-  padding-right: 28px;
+  padding: 10px 28px;
+  height: 330px;
+  -webkit-transform: translateY(-330px);
+          transform: translateY(-330px);
 }
 
 #card #bloc_info p {
   padding: 20px 0px;
 }
 
+#card #bloc_info h6 {
+  font-weight: 600;
+}
+
 #card #bloc_info li {
-  list-style-type: circle;
+  list-style-type: disc;
   margin-top: 4px;
-  margin-left: 16px;
 }
 
 #card {
-  -webkit-transition: all 0.5s ease-in;
-  transition: all 0.5s ease-in;
+  -webkit-transition: all 1s ease-in;
+  transition: all 1s ease-in;
 }
 
 #card:hover {
-  -webkit-box-shadow: 0px 0px 10px 3px #353535;
-          box-shadow: 0px 0px 10px 3px #353535;
+  -webkit-box-shadow: 0px 0px 5px 5px #c4c4c4;
+          box-shadow: 0px 0px 5px 5px #c4c4c4;
 }
 
 #card:hover #bloc_info {
   display: block;
-  /*@keyframes #bloc_info {
-            from {
-                display: block;
-            }
-            
-            to {
-                display: flex;
-                justify-content: flex-end;
-            }
-        }*/
+  opacity: 0.9;
+}
+
+/* nav bar */
+.sidebar {
+  height: 100%;
+  width: 45px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #15676d;
+  overflow-x: hidden;
+  padding-top: 16px;
+}
+
+.sidebar a {
+  padding: 6px 8px 6px 16px;
+  text-decoration: none;
+  color: #ffffff;
+  display: block;
+  margin: 50px 0px;
+}
+
+.sidebar a:hover {
+  color: #000000;
 }
 
 /* Trial */
@@ -317,6 +344,10 @@ li {
   padding: 13px 50px;
   border-radius: 5px;
   cursor: pointer;
+}
+
+.trial_container .trial_right .login {
+  color: blue;
 }
 
 .trial_container .trial_right .submit_start {
