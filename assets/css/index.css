@@ -8,10 +8,16 @@
   border: none;
 }
 
-body,
-html {
+body {
   font-family: "Roboto", sans-serif;
   overflow-x: hidden;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
 }
 
 a {
@@ -27,7 +33,7 @@ li {
   list-style-type: none;
 }
 
-.container2 {
+.container_flex {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -40,8 +46,8 @@ li {
 }
 
 .body_content {
-  width: 98vw;
-  margin-left: 2vw;
+  width: calc(100vw - 45px);
+  margin-left: 45px;
 }
 
 .header {
@@ -55,8 +61,8 @@ li {
 
 .header_carousel_item {
   position: absolute;
-  height: 60vh;
-  min-width: 100vw;
+  min-height: 60vh;
+  min-width: 100%;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
@@ -108,7 +114,10 @@ li {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 240px;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  width: 21 0px;
   margin-bottom: 39px;
 }
 
@@ -140,6 +149,55 @@ li {
   color: #ff7a00;
   font-size: 2em;
   cursor: pointer;
+}
+
+@media (max-width: 1200px) {
+  .header_carousel_item p:nth-child(3) {
+    width: 75%;
+  }
+}
+
+@media (max-width: 1000px) {
+  .header {
+    min-height: 80vh;
+  }
+  .header_carousel_item {
+    min-height: 80vh;
+  }
+}
+
+@media (max-width: 800px) {
+  .header {
+    min-height: 80vh;
+  }
+  .header_carousel_item {
+    padding: 50px 0 50px 50px;
+  }
+}
+
+@media (max-width: 650px) {
+  .header_carousel_item p:nth-child(3) {
+    width: 85%;
+    text-align: justify;
+  }
+}
+
+@media (max-width: 500px) {
+  .header {
+    min-height: 100vh;
+  }
+  .header_carousel_item {
+    min-height: 100vh;
+  }
+  .header_carousel_item h2 {
+    font-size: 2.25em;
+  }
+  .header_carousel_item p:nth-child(3) {
+    font-size: 1em;
+  }
+  .header_carousel_item a {
+    font-size: 1em;
+  }
 }
 
 #item_one {

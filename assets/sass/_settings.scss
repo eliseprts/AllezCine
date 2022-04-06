@@ -21,10 +21,11 @@ $font_2: 'Roboto', sans-serif;
 	outline: none;
 	border: none;
 }
-body,
-html {
+body {
 	font-family: $font_2;
 	overflow-x: hidden;
+	display: flex;
+	flex-direction: column;
 }
 a {
 	text-decoration: none;
@@ -39,13 +40,13 @@ li {
 
 // General
 
-.container2 {
+.container_flex {
 	display: flex;
 	justify-content: center;
 	align-items: center;
 }
 
 .body_content {
-	width: 98vw;
-	margin-left: 2vw;
+	width: calc(100vw - 45px);
+	margin-left: 45px;
 }
