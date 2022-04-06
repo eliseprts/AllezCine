@@ -433,4 +433,55 @@ li {
   text-decoration: none;
   color: black;
 }
+
+@media only screen and (max-width: 916px) {
+  .trial_container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    width: 90vw;
+  }
+  .trial_container .trial_left p {
+    font-size: 1.7rem;
+  }
+  .trial_container .trial_right {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .trial_container .trial_right .contact_button {
+    margin-top: 20px;
+    margin-right: 5px;
+    padding: 11px 62px;
+  }
+  .container_footer {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .container_footer .footer_left {
+    margin-left: 25px;
+  }
+}
 /*# sourceMappingURL=index.css.map */
