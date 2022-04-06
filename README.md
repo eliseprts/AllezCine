@@ -36,3 +36,6 @@ Create a website that will have to retrieve from an [API all the recent movies](
 [Figma model](<https://www.figma.com/file/eOQKHQM4WopvP3o0asSZXP/AllezCine-(Community)?node-id=2%3A8>)
 
 ### Style Guide
+
+![AllezCiné - style guide](https://user-images.githubusercontent.com/94377998/161983662-cd714ab2-0ad0-4908-903b-a0deb3c2e546.jpg)
+
