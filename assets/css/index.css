@@ -160,11 +160,22 @@ li {
   padding-left: 50px;
 }
 
-#line {
-  color: #001724;
-  padding-bottom: 50px;
-  padding-left: 50px;
-  padding-right: 50px;
+/*#cards_container {
+	color: #001724;
+	padding-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+	display: flex;
+	flex-direction: row;
+    flex-wrap: wrap;
+	justify-content: space-around;
+}*/
+.gallery {
+  padding-left: 40px;
+  padding-right: 40px;
+}
+
+#cards_container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -172,8 +183,12 @@ li {
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
-  -ms-flex-pack: distribute;
-      justify-content: space-around;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  gap: 50px;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 #card {
