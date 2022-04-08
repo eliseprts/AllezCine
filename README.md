@@ -26,11 +26,6 @@ _Repo created as part of the [BeCode web development training](https://becode.or
 
 ![JavaScript](https://img.shields.io/badge/javascript-%23323330.svg?style=for-the-badge&logo=javascript&logoColor=%23F7DF1E)
 
-- HTML5
-- CSS3, SASS
-- API
-- JavaScript
-
 ## Learning Objectives
 
 - Build a design to the provided wireframe (Here)
